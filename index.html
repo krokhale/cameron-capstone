@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Date Night</title>
+	<link rel="stylesheet" type="text/css" href="index.css">	
+	<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+	<script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>      
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<main role="main">
+		<header>
+			<h1>Date Night!</h1>
+		</header>
+		<section role="region" class="outOrInPage">
+			<header role="banner">
+				<h2>Are you Going Out or Staying In?</h2>
+			</header>
+			<div class="outOrInBox">
+				<button name="goOut" class="goOutButton">Go Out!</button>
+				<button name="stayIn" class="stayInButton">Stay In!</button>
+			</div>
+		</section>
+		<section role="region" class="outPage" hidden>
+			<header role="banner">
+				<h2>Going Out</h2>
+			</header>
+			<section class="city">
+			  <form action="#" class="cityRequestContainer">
+            <label for="query">Where are you?</label>
+            <input type="text" class="cityInput" placeholder="Dallas, Texas">
+            <button type="submit" class="citySubmit">Here!</button>
+        </form>
+        <div class="cityResults" hidden></div>
+			</section>
+			<section class="column">
+			  <form action="#" class="foodRequestContainer" hidden>
+            <label for="query">What do you want to eat?</label>
+            <input type="text" class="foodInput" placeholder="Chinese">
+            <button type="submit" class="foodSubmit">Search</button>
+            <a href="https://www.zomato.com/?utm_source=referral-widget&amp;utm_medium=restaurant_search_widget&amp;utm_campaign=widget-developers"><img src="https://www.zomato.com/images/logo/icon_32x32.png" alt="Zomato" width="16px" height="auto">Powered by Zomato</a>
+        </form>
+        <div class="foodResults" hidden></div>
+			</section>
+      <section class="column">
+        <form action="#" class="eventRequestContainer" hidden>
+            <label for="query">What do you want to go see?</label>
+            <input type="text" class="eventInput" placeholder="Live Music">
+            <button type="submit" class="eventSubmit">Search</button>
+            
+            <a href="http://eventful.com/"><img src="http://api.eventful.com/images/powered/eventful_58x20.gif" alt="Local Events, Concerts, Tickets">Events by Eventful</a>
+        </form>
+        <div class="eventResults" hidden></div>
+      </section>
+      <div class="stop"></div>
+      <nav>
+        <div class="returnHome">
+			  <button name="outToHome" class="homeButton">Second Thoughts?</button>
+			  </div>
+      </nav>
+		</section>
+		<section role="region" class="inPage" hidden>
+			<header role="banner">
+				<h2>Staying In</h2>
+			</header>
+			<section class="column">
+			  <form action="#" class="recipeRequestContainer">
+            <label for="query">What do you want to make?</label>
+            <input type="text" class="recipeInput" placeholder="Chicken">
+            <button type="submit">Search</button>
+            <a href="http://developer.edamam.com"><img src="https://developer.edamam.com/images/light.png" alt="Edamam logo"></a>
+        </form>
+        <div class="recipeResults" hidden></div>
+			</section>
+			<section class="column">
+			  <div class="ideaContainer">
+          <h3>Don't know what to do?</h3>
+          <button class="ideaButton">Idea!</button>
+          <div class="ideaResults" hidden></div>
+        </div>
+			</section>
+			<div class="stop"></div>
+      <nav>
+        <div class="returnHome">
+			    <button name="inToHome" class="homeButton">Second Thoughts?</button>
+			  </div>
+      </nav>
+		</section>	
+	</main>
+</body>
+</html>
